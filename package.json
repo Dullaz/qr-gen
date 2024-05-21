@@ -1,5 +1,5 @@
 {
-  "name": "qr-gen",
+  "name": "@dullaz/qr-gen",
   "version": "1.0.0",
   "description": "QR Code generator",
   "homepage": "https://github.com/Dullaz/qr-gen",
@@ -22,6 +22,7 @@
   },
   "bugs": "https://github.com/Dullaz/qr-gen/issues",
   "main": "./lib/qr.js",
+  "typings": "./lib/qr.d.ts",
   "scripts": {
     "test": "./tests/test.js"
   },
@@ -32,8 +33,5 @@
   "dependencies": {
     "fflate": "^0.8.2",
     "pako": "^2.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.12.12"
   }
 }
