@@ -15,7 +15,7 @@ Installing
 -----
 
 ```shell
-npm install qr-gen
+npm install @dullaz/qr-gen
 ```
 
 Usage
@@ -23,7 +23,7 @@ Usage
 
 Example:
 ```javascript
-var qr = require('qr-gen');
+var qr = require('@dullaz/qr-gen');
 
 var qr_svg = qr.image('I love QR!', { type: 'svg' });
 qr_svg.pipe(require('fs').createWriteStream('i_love_qr.svg'));
@@ -33,7 +33,7 @@ var svg_string = qr.imageSync('I love QR!', { type: 'svg' });
 
 Example For generate images in client side:
 ```javascript in your app.js
-var qr = require('qr-gen');
+var qr = require('@dullaz/qr-gen');
 router.get('/qr', function(){
   var code = qr.image('http://www.google.com', { type: 'png' });
   res.setHeader('Content-type', 'image/png');  //sent qr image to client side
@@ -47,7 +47,7 @@ then in the html files:
 
 [More examples](./examples)
 
-`qr = require('qr-gen')`
+`qr = require('@dullaz/qr-gen')`
 
 ### Methods
 
